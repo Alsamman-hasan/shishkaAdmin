@@ -1,0 +1,45 @@
+@import "src/shared/model/static/scss/abstracts/fonts";
+
+.product-list {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+
+  .MuiDataGrid-cell {
+    padding: 1rem 0.5rem !important;
+    margin: 0 0 0 0 !important;
+    display: flex;
+  }
+
+  .MuiDataGrid-columnHeaderTitleContainerContent {
+    @include P3;
+  }
+
+  .MuiDataGrid-columnSeparator {
+    display: none !important;
+  }
+
+  .MuiDataGrid-columnHeader {
+    padding: 0 0.5rem !important;
+    margin: 0 0 0 0 !important;
+  }
+
+  p {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .name,
+  .description {
+    text-align: initial;
+  }
+}
+
+#tooltip-table {
+  .MuiTooltip-tooltip {
+    font-size: 1.5rem;
+  }
+}

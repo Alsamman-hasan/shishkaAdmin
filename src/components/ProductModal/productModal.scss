@@ -1,0 +1,124 @@
+.product-modal {
+  padding: 3rem;
+  width: 100%;
+  overflow-y: auto;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #eeeeee;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0 1.5rem 2.375rem 3px rgba(0, 0, 0, 0.14),
+      0 9px 2.875rem 0.5rem rgba(0, 0, 0, 0.12);
+    min-height: 90%;
+    width: 80%;
+    border-radius: 1.125rem;
+    margin: 0 auto;
+    outline: none;
+
+    &__header {
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--main-grey-light);
+    }
+
+    &__content {
+      padding: 0 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      &__main {
+        display: flex;
+        gap: 1.5rem;
+
+        &__left,
+        &__right {
+          width: 50%;
+        }
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      &__description {}
+
+    }
+
+    &__images {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0 2.5rem;
+      flex: 0.5;
+      flex-wrap: wrap;
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__content {
+          display: flex;
+          grid-gap: 2rem;
+          gap: 2rem;
+          padding: 1rem;
+          align-items: center;
+          border: 1px solid black;
+          border-radius: 0.5rem;
+
+          &__img {
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+          }
+
+          &__main {
+            &__title {
+              text-align: center;
+              padding-bottom: 0.5rem;
+            }
+
+            label {
+              min-width: 150px !important;
+              width: 150px !important;
+              height: 200px !important;
+              border-color: gray;
+              display: flex;
+              gap: 1rem;
+              flex-direction: column;
+
+              >div {
+                display: flex;
+                flex-direction: column;
+
+                span:nth-child(2) {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+
+        &__inputs {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+    }
+
+    &__btns {
+      padding: 1rem 2.5rem 1.5rem 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "src/shared/model/static/scss/globalStyles";
+
+.app {
+  background-color: #f7f8fc;
+
+  &__snackbars-container {
+    width: 100%;
+    position: relative;
+  }
+}
+
+#header-popover {
+  .MuiPopover-paper {
+    padding: 1rem;
+    display: flex;
+    overflow-y: clip;
+    box-shadow: 5px 12px 35px rgba(18, 18, 18, 0.2);
+    border-radius: 6px !important;
+  }
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

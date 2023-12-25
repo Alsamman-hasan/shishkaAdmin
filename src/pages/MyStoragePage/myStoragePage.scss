@@ -1,0 +1,11 @@
+.my-storage-page {
+  padding: 0 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__content {
+    display: flex;
+
+  }
+}

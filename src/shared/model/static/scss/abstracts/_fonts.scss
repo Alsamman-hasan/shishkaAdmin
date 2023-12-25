@@ -1,0 +1,53 @@
+// Heading
+@mixin H2 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+// Paragraph
+@mixin P2 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19.2px;
+}
+
+@mixin P3 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 16.8px;
+}
+
+@mixin Description {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 14.4px;
+}
+
+
+// Button
+@mixin B-1 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
+
+@mixin B-2 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}

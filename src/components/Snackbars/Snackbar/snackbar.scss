@@ -1,0 +1,35 @@
+:root {
+  --toastify-toast-width: 30rem;
+  --toastify-toast-min-height: 3rem;
+}
+
+.Toastify__toast-container.Toastify__toast-container--top-center {
+  position: absolute;
+  top: 2.5rem;
+  padding: 0;
+}
+
+.Toastify__toast-container--bottom-left {
+  left: 2.7rem;
+  min-width: var(--toastify-toast-width);
+  width: auto;
+}
+
+.Toastify__toast {
+  border-radius: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.Toastify__toast-body {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.snackbar {
+  display: flex;
+  align-items: center;
+  min-width: var(--toastify-toast-width);
+}

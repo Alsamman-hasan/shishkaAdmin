@@ -1,0 +1,24 @@
+@import "src/shared/model/static/scss/abstracts/fonts";
+
+.icon-button {
+  color: grey;
+  display: flex;
+  align-items: center;
+  // width: 7.875rem;
+  // height: 1.5rem;
+  cursor: pointer;
+
+  &__picture {
+    display: flex;
+  }
+
+  &__text {
+    padding-left: 0.5rem;
+    // @include B-Small;
+  }
+}
+
+// .active {
+//   color: color(MainWhite);
+//   fill: color(MainWhite);
+// }

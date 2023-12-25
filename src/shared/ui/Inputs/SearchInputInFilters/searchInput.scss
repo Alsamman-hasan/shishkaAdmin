@@ -1,0 +1,116 @@
+@import "src/shared/model/static/scss/abstracts/fonts";
+
+.search-input,
+.search-input-filled {
+  border-radius: 0.625rem;
+  outline: none !important;
+  width: 100%;
+
+  input:focus-visible {
+    outline-offset: unset;
+    outline: none;
+  }
+
+  svg {
+    display: flex;
+    // fill: color(G-500);
+  }
+
+  .MuiTextField-root {
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid;
+      background: transparent;
+      border-radius: 0.375rem !important;
+    }
+
+    .MuiOutlinedInput-input {
+      box-sizing: border-box;
+      height: 3.4rem;
+      @include P3;
+      z-index: 3;
+    }
+
+    // .MuiOutlinedInput-root:hover fieldset {
+    //   border-color: color(G-900);
+    // }
+
+    .Mui-error {
+      background: rgba(255, 124, 1, 0.15);
+      border: 1px solid red;
+      word-break: break-all;
+    }
+
+    [class*="Mui-disabled"] {
+      &:hover {
+        .MuiOutlinedInput-notchedOutline {
+          background: transparent;
+          border-color: var(--main-grey);
+          color: var(--main-grey);
+        }
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        background: transparent;
+        border-color: var(--main-grey);
+        color: var(--main-grey);
+      }
+
+      .MuiOutlinedInput-input {
+        color: var(--main-grey);
+        -webkit-text-fill-color: var(--main-grey);
+      }
+
+      .MuiOutlinedInput-root fieldset {
+        border-color: var(--main-grey);
+      }
+
+      .MuiOutlinedInput-root:hover fieldset {
+        border-color: var(--main-grey);
+      }
+    }
+
+    .MuiInputAdornment-root {
+      z-index: 3;
+    }
+
+    [class*="Mui-focused"] {
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid var(main-grey-dark) !important;
+        outline: none;
+      }
+    }
+  }
+
+  .MuiOutlinedInput-input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+  }
+
+  .MuiOutlinedInput-root:focus-visible {
+    outline-offset: unset;
+    outline: none;
+  }
+
+  input[type="search" i]::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
+// .search-input-filled {
+//   .MuiTextField-root {
+//     .MuiOutlinedInput-notchedOutline {
+//       // background-color: #464646;
+//     }
+//   }
+// }
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  fill: var(--main-white);
+}
